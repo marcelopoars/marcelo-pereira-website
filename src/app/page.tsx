@@ -1,91 +1,36 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import Image from "next/image";
 
-const inter = Inter({ subsets: ['latin'] })
+import ImageProfile from "../../public/marcelo-pereira-frontend-developer.jpg";
+import Link from "next/link";
+import { SocialLinks } from "@/components";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
+    <section className="flex flex-col items-center text-center gap-4 pt-20">
+      <div className="h-[160px] w-[160px] bg-indigo-800 border-6 border-indigo-800 rounded-full overflow-hidden">
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
+          src={ImageProfile}
+          alt="Foto Marcelo Pereira"
+          placeholder="blur"
           priority
         />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <h1>
+        Marcelo Pereira
+        <span>Desenvolvedor Frontend</span>
+      </h1>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="max-w-2xl text-xl">
+        <p className="mb-4">
+          Desenvolvedor Frontend a mais de 10 anos, atualmente trabalhando com
+          ReactJs, JavaScript, TypeScript, Styled-components, Next.js, entre
+          outras tecnologias. Apaixonado por temas como Acecibilidade na Web,
+          Web Semântica, SEO e Performance.
+        </p>
       </div>
-    </main>
-  )
+
+      <SocialLinks />
+    </section>
+  );
 }

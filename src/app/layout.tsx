@@ -1,18 +1,19 @@
-import './globals.css'
+import { Footer } from "@/components";
+
+import "./globals.css";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html lang="pt-br">
       <head />
-      <body>{children}</body>
+      <body className="h-screen flex flex-col bg-indigo-50">
+        <main className="flex-1 px-6">{children}</main>
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }
