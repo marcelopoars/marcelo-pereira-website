@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    @apply antialiased text-zinc-900;
+  }
+  
   h1 {
-    @apply text-4xl font-bold;
+    @apply text-4xl font-bold text-indigo-900;
   }
 
   h1 span {
-    @apply block text-2xl font-thin;
+    @apply block text-3xl font-thin;
   }
 }
 
@@ -19,6 +23,6 @@
 
   .social-links:hover,
   .social-links:focus {
-    @apply bg-indigo-900 text-indigo-50
+    @apply bg-indigo-900 text-indigo-50;
   }
 }

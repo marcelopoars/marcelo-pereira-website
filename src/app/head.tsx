@@ -6,7 +6,7 @@ export default function Head() {
         name="description"
         content="Desenvolvedor Frontend / Full-stack a mais de 10 anos, atualmente trabalhando com ReactJs, JavaScript, TypeScript, Styled-components, Next.js, NodeJs, NestJS, MongoDb, Prisma, entre outras tecnologias."
       />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" type="image/png" href="/marcelo-pereira-frontend-developer-icon.png" />
       <title>Marcelo Pereira - Desenvolvedor Frontend</title>
     </>
   );
