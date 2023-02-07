@@ -11,7 +11,9 @@ export default function RootLayout({
     <html lang="pt-br">
       <head />
       <body className="h-screen flex flex-col bg-indigo-50">
-        <main className="flex-1 px-6">{children}</main>
+        <main className="flex justify-center items-center flex-1 px-6">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

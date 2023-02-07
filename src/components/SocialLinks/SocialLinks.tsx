@@ -9,7 +9,7 @@ export const SocialLinks = () => {
   ];
 
   return (
-    <aside className="flex justify-center flex-wrap gap-4 py-10">
+    <aside className="flex justify-center flex-wrap gap-4 pt-8 pb-20">
       {links.map(({ name, url }) => (
         <Link
           key={url}
