@@ -23,9 +23,8 @@ export default function Home() {
       <div className="max-w-2xl text-xl">
         <p>
           Desenvolvedor Frontend a mais de 14 anos, atualmente trabalhando com
-          ReactJs, JavaScript, TypeScript, Styled-components, Next.js, entre
-          outras tecnologias. Apaixonado por temas como Acecibilidade na Web,
-          Web Semântica, SEO e Performance.
+          ReactJs, TypeScript, JavaScript, Styled-components, entre outras
+          tecnologias.
         </p>
       </div>
 
