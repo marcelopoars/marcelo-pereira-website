@@ -20,8 +20,8 @@ export default function Home() {
         <span>Desenvolvedor Frontend</span>
       </h1>
 
-      <div className="max-w-2xl text-md 2xl:text-xl">
-        <p>
+      <div className="max-w-2xl">
+        <p className="text-lg">
           Desenvolvedor Frontend a mais de 14 anos, atualmente trabalhando com
           ReactJs, TypeScript, JavaScript, Styled-components, entre outras
           tecnologias.
