@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-zinc-900 bg-indigo-50 dark:text-indigo-200 dark:bg-zinc-900;
+    @apply h-screen flex flex-col
+  }
+
+  h1 {
+    @apply text-2xl 2xl:text-4xl font-bold text-indigo-900 dark:text-indigo-500;
+  }
+
+  h1 span {
+    @apply block text-2xl 2xl:text-3xl font-thin dark:font-normal;
+  }
+}
+
+@layer components {
+  .social-links {
+    @apply flex-1;
+    @apply py-2 px-6 2xl:py-4 2xl:px-8;
+    @apply text-indigo-900 dark:text-indigo-500 font-bold;
+    @apply border-2 border-indigo-900 dark:border-indigo-500 rounded-lg;
+    @apply outline-none transition;
+  }
+
+  .social-links:hover,
+  .social-links:focus {
+    @apply bg-indigo-900 dark:bg-indigo-500 text-indigo-50 ;
+  }
+}
