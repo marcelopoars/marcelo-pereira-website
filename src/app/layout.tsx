@@ -11,7 +11,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <head />
       <body>
-        <main className="max-w-[600px] mx-auto flex justify-center items-center flex-1 px-6">
+        <main className="max-w-[800px] mx-auto flex justify-center items-center flex-1 px-6">
           {children}
         </main>
         <Footer />

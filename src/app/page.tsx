@@ -21,13 +21,11 @@ export default function Home() {
         <span>Desenvolvedor Frontend</span>
       </h1>
 
-      <div className="max-w-2xl">
-        <p className="text-base lg:text-lg">
-          Desenvolvedor Frontend a mais de 10 anos, atualmente trabalhando com
-          ReactJs, TypeScript, JavaScript, NextJs, TailwindCss, Styled-components, entre outras
-          tecnologias.
-        </p>
-      </div>
+      <p className="text-base lg:text-lg">
+        Desenvolvedor Frontend a mais de 10 anos, atualmente trabalhando com
+        ReactJs, TypeScript, JavaScript, NextJs, TailwindCss, Styled-components,
+        entre outras tecnologias.
+      </p>
 
       <SocialLinks />
     </section>
