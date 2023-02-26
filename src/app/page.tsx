@@ -2,18 +2,30 @@ import Image from "next/image";
 
 import { SocialLinks } from "@/components";
 
-import ImageProfile from "../../public/marcelo-pereira-frontend-developer.jpg";
+// import ImageProfile from "../../public/marcelo-pereira-frontend-developer.jpg";
+
+import blurImage from "../../public/blur.png";
+
+
+const ImageProfileBase64 = blurImage.blurDataURL
+
+console.log(ImageProfileBase64);
+
 
 export default function Home() {
   return (
     <section className="flex flex-col items-center text-center gap-4">
       <div className="w-[120px] 2xl:w-[160px] bg-indigo-900 border-4 border-indigo-900 rounded-full overflow-hidden">
         <Image
-          src={ImageProfile}
+          src={"/marcelo-pereira-frontend-developer.jpg"}
           alt="Foto Marcelo Pereira"
+          width={160}
+          height={160}
           placeholder="blur"
-          priority
+          blurDataURL={ImageProfileBase64}
           quality={100}
+          priority
+          sizes="(min-width: 60em) 24vw, (min-width: 28em) 45vw, 100vw"
         />
       </div>
 
