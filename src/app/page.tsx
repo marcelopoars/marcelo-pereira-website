@@ -7,13 +7,13 @@ import ImageProfile from "../../public/marcelo-pereira-frontend-developer.jpg";
 export default function Home() {
   return (
     <section className="flex flex-col items-center text-center gap-4">
-      <div className="bg-indigo-900 border-4 border-indigo-900 rounded-full overflow-hidden">
+      <div className="w-[120px] 2xl:w-[160px] bg-indigo-900 border-4 border-indigo-900 rounded-full overflow-hidden">
         <Image
           src={ImageProfile}
           alt="Foto Marcelo Pereira"
           placeholder="blur"
           priority
-          className="block w-[120px] 2xl:w-[160px]"
+          quality={100}
         />
       </div>
 
