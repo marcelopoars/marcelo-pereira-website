@@ -10,11 +10,11 @@
   }
 
   h1 {
-    @apply text-2xl 2xl:text-4xl font-bold text-indigo-900 dark:text-indigo-500;
+    @apply text-4xl 2xl:text-6xl font-bold text-indigo-900 dark:text-indigo-500;
   }
 
   h1 span {
-    @apply block text-xl 2xl:text-3xl font-thin dark:font-normal;
+    @apply block text-xl 2xl:text-3xl font-medium dark:font-normal;
   }
 }
 
@@ -22,13 +22,14 @@
   .social-links {
     @apply flex-1;
     @apply py-2 px-6 2xl:py-4 2xl:px-8;
-    @apply text-indigo-900 dark:text-indigo-500 font-bold;
+    @apply text-lg text-indigo-900 dark:text-indigo-500 font-bold;
     @apply border-2 border-indigo-900 dark:border-indigo-500 rounded-lg;
-    @apply outline-none transition;
+    @apply transition;
   }
 
   .social-links:hover,
   .social-links:focus {
-    @apply bg-indigo-900 dark:bg-indigo-500 text-indigo-50 ;
+    @apply bg-indigo-900 dark:bg-indigo-500 text-indigo-50;
+    @apply outline outline-2 outline-indigo-900 dark:outline-indigo-500 outline-offset-4;
   }
 }
