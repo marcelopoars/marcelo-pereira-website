@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply antialiased  bg-indigo-50 dark:bg-zinc-900;
+    @apply antialiased bg-indigo-50 dark:bg-zinc-900;
     @apply text-zinc-900 dark:text-indigo-200;
     @apply h-screen flex flex-col
   }
