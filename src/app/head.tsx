@@ -4,7 +4,7 @@ export default function Head() {
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta
         name="description"
-        content="Desenvolvedor Frontend a mais de 14 anos, atualmente trabalhando com ReactJs, TypeScript, JavaScript, Styled-components, entre outras tecnologias"
+        content="Desenvolvedor Frontend a mais de 10 anos, atualmente trabalhando com ReactJs, TypeScript, JavaScript, NextJs, TailwindCss, Styled-components, entre outras tecnologias."
       />
       <link
         rel="icon"
