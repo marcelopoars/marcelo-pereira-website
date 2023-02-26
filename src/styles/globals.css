@@ -4,7 +4,8 @@
 
 @layer base {
   body {
-    @apply antialiased text-zinc-900 bg-indigo-50 dark:text-indigo-200 dark:bg-zinc-900;
+    @apply antialiased  bg-indigo-50 dark:bg-zinc-900;
+    @apply text-zinc-900 dark:text-indigo-200;
     @apply h-screen flex flex-col
   }
 
@@ -13,7 +14,7 @@
   }
 
   h1 span {
-    @apply block text-2xl 2xl:text-3xl font-thin dark:font-normal;
+    @apply block text-xl 2xl:text-3xl font-thin dark:font-normal;
   }
 }
 
