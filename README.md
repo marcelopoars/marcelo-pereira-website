@@ -10,3 +10,7 @@ Projeto desenvolvido com React, NextJs e TailwindCSS.
 - TypeScript
 - App Router
 - Server Components
+
+Este projeto foi publicado na *Vercel*.
+
+[Visite o site: https://marcelopereira.dev](https://marcelopereira.dev)
