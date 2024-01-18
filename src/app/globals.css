@@ -2,26 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+  body {
+    @apply antialiased bg-indigo-50 dark:bg-zinc-900;
+    @apply text-zinc-900 dark:text-indigo-200;
+    @apply h-screen flex flex-col
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  h1 {
+    @apply text-4xl 2xl:text-6xl font-bold text-indigo-900 dark:text-indigo-500;
+  }
+
+  h1 span {
+    @apply block text-xl 2xl:text-3xl font-medium dark:font-normal;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .social-links {
+    @apply flex-1;
+    @apply py-2 px-6 2xl:py-4 2xl:px-8;
+    @apply text-lg text-indigo-900 dark:text-indigo-500 font-bold;
+    @apply border-2 border-indigo-900 dark:border-indigo-500 rounded-lg;
+    @apply transition;
+  }
+
+  .social-links:hover,
+  .social-links:focus {
+    @apply bg-indigo-900 dark:bg-indigo-500 text-indigo-50;
+    @apply outline outline-2 outline-indigo-900 dark:outline-indigo-500 outline-offset-4;
+  }
 }
