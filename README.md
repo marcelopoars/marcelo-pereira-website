@@ -2,6 +2,8 @@
 
 ![Screen desktop website](screen-desktop-website.png)
 
+## Stack
+
 Projeto desenvolvido com React, NextJs e TailwindCSS.
 
 - ReactJs
@@ -11,6 +13,8 @@ Projeto desenvolvido com React, NextJs e TailwindCSS.
 - App Router
 - Server Components
 
-Este projeto foi publicado na *Vercel*.
+## Deploy
+
+Este projeto foi publicado na **_Vercel_**.
 
 [Visite o site: https://marcelopereira.dev](https://marcelopereira.dev)
