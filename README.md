@@ -4,7 +4,7 @@
 
 ## Stack
 
-Projeto desenvolvido com React, NextJs e TailwindCSS.
+Repositório do meu website pessoal. Projeto desenvolvido com ReactJs, NextJs e TailwindCSS.
 
 - ReactJs
 - NextJs
