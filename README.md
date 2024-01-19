@@ -1,10 +1,13 @@
 # My Website
 
+Repositório do meu website pessoal.
+
 ![Screen desktop website](screen-desktop-website.png)
+
 
 ## Stack
 
-Repositório do meu website pessoal. Projeto desenvolvido com ReactJs, NextJs e TailwindCSS.
+Projeto desenvolvido com ReactJs, NextJs e TailwindCSS.
 
 - ReactJs
 - NextJs
