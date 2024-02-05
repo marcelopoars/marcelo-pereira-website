@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className="antialiased">
-      <body className={`${inter.className} min-h-dvh`}>
+      <body className={`${inter.className} min-h-svh`}>
         <main className="max-w-[800px] mx-auto flex justify-center items-center flex-1 px-6">
           {children}
         </main>
