@@ -6,7 +6,7 @@ import notesNlwExpertThumb from '@/app/assets/projects/notes-nlw-expert-app.png'
 export const myProjects = [
   {
     name: 'Tailwind NextJs',
-    description: 'Projeto de estudo desenvolvido com NextJs e TailwindCSS.',
+    description: 'Projeto desenvolvido na Masterclass de TailwindCSS da Rocketseat.',
     githubLink: 'https://github.com/marcelopoars/tailwind-nextjs',
     previewLink: 'https://tailwind-nextjs.marcelopereira.dev',
     stack: ['ReactJs', 'NextJs', 'TypeScript', 'TailwindCSS'],
@@ -15,7 +15,7 @@ export const myProjects = [
   },
   {
     name: 'Notes',
-    description: 'Aplicação front-end em ReactJS que permite o usuário salvar notas/lmbretes. As notas podem ser criadas tanto escritas como gravadas por voz.',
+    description: 'Esta aplicação foi desenvolvida durante o NLW Expert da Rocketseat - trilha de React.',
     githubLink: 'https://github.com/marcelopoars/nlw-experts-notes',
     previewLink: 'https://notes.marcelopereira.dev',
     stack: ['ReactJs', 'NextJs', 'TypeScript', 'TailwindCSS'],
@@ -24,7 +24,7 @@ export const myProjects = [
   },
   {
     name: 'Elaine | Costureira',
-    description: 'Landing page para divulgar os serviços de costura da Elaine.',
+    description: 'Landing page desenvolvida para a cliente Elains Costureira de Canoas-RS.',
     githubLink: '',
     previewLink: 'https://www.elainecostureira.com.br',
     stack: ['ReactJs', 'NextJs', 'TypeScript', 'TailwindCSS', 'SEO'],
@@ -33,7 +33,7 @@ export const myProjects = [
   },
   {
     name: 'Triplo A Seminovos',
-    description: 'Website desenvolvido para o cliente Triplo A Seminovos, revendedora de veículos de Canoas-RS.',
+    description: 'Website desenvolvido para o cliente Triplo A Seminovos - Canoas-RS.',
     githubLink: '',
     previewLink: 'https://triploaseminovos.com.br',
     stack: ['ReactJs', 'GatsbyJs', 'JavaScript', 'Styled-components', 'SEO'],
