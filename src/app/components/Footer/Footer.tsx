@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer className="bg-indigo-900 text-indigo-50 px-6 py-12 space-y-6 lg:px-12 lg:py-20">
       <div className="max-w-7xl mx-auto flex justify-center">
-        <SocialLinks />
+        {/* <SocialLinks /> */}
       </div>
 
       <div className="max-w-7xl mx-auto">
@@ -39,7 +39,8 @@ export function Footer() {
           "lg:flex items-center gap-2"
         )}
       >
-        <Chat weight="duotone" className="size-6" />  Solicite orçamento
+        {/* <Chat weight="duotone" className="size-6" /> */}
+        Solicite orçamento
       </a>
     </footer>
   );
