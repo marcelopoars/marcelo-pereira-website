@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <Header />
         <main className="flex-1">{children}</main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
