@@ -24,16 +24,16 @@ export const myProjects = [
   },
   {
     name: 'Elaine | Costureira',
-    description: 'Landing page desenvolvida para a cliente Elains Costureira de Canoas-RS.',
+    description: 'Landing page desenvolvida para a cliente Elaine Costureira de Canoas-RS.',
     githubLink: '',
     previewLink: 'https://www.elainecostureira.com.br',
     stack: ['ReactJs', 'NextJs', 'TypeScript', 'TailwindCSS', 'SEO'],
     thumb: elaineCostureiraThumb,
-    projectType: 'Website'
+    projectType: 'Landing page'
   },
   {
     name: 'Triplo A Seminovos',
-    description: 'Website desenvolvido para o cliente Triplo A Seminovos - Canoas-RS.',
+    description: 'Website desenvolvido para o cliente Triplo A Seminovos de Canoas-RS.',
     githubLink: '',
     previewLink: 'https://triploaseminovos.com.br',
     stack: ['ReactJs', 'GatsbyJs', 'JavaScript', 'Styled-components', 'SEO'],
