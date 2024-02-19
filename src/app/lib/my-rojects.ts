@@ -18,7 +18,7 @@ export const myProjects = [
     description: 'Esta aplicação foi desenvolvida durante o NLW Expert da Rocketseat - trilha de React.',
     githubLink: 'https://github.com/marcelopoars/nlw-experts-notes',
     previewLink: 'https://notes.marcelopereira.dev',
-    stack: ['ReactJs', 'NextJs', 'TypeScript', 'TailwindCSS'],
+    stack: ['ReactJs', 'Vite', 'TypeScript', 'TailwindCSS'],
     thumb: notesNlwExpertThumb,
     projectType: 'App'
   },
