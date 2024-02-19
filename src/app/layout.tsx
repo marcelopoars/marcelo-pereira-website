@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import { Footer } from "./components";
+import { Footer, Header } from "./components";
 
-import "./globals.css";
+import "./styles/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "900"],
+});
 
 export const metadata: Metadata = {
-  title: "Marcelo Pereira | Desenvolvedor Frontend ReactJs",
+  title: "Marcelo Pereira | Desenvolvedor Frontend",
   description:
-    "Desenvolvedor Frontend a mais de 10 anos, atualmente trabalhando com ReactJs, TypeScript, JavaScript, NextJs, TailwindCss, Styled-components, entre outras tecnologias.",
+    "Criação e desenvolvimento de sites, landing pages e aplicações web.",
   metadataBase: new URL("https://marcelopereira.dev"),
 };
 
@@ -20,11 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br" className="antialiased">
-      <body className={inter.className}>
-        <main className="max-w-[800px] mx-auto flex justify-center items-center flex-1 px-6">
-          {children}
-        </main>
+    <html lang="pt-br" className="antialiased text-balance">
+      <body className={`${inter.className}`}>
+        <Header />
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>
