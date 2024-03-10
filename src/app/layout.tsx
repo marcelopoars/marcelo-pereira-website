@@ -30,7 +30,9 @@ export const metadata: Metadata = {
     type: "website",
     countryName: "Brasil",
     url: "https://marcelopereira.dev",
+
   },
+
 };
 
 export default function RootLayout({

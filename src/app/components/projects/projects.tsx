@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function Projects() {
   return (
-    <section className="bg-indigo-100/25 px-6 py-12 lg:px-12 lg:py-20">
+    <section className="px-6 py-12 lg:px-12 lg:py-20">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl mb-8 lg:text-4xl lg:mb-12">Últimos projetos</h2>
 

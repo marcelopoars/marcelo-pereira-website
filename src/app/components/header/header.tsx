@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-import ImageProfile from "@/app/assets/marcelo-pereira-frontend-developer.jpg";
-import { twMerge } from "tailwind-merge";
 import { SocialLinks } from "..";
+
+import ImageProfile from "@/app/assets/marcelo-pereira-frontend-developer.jpg";
 
 export function Header() {
   return (
-    <header className="p-6 lg:pt-12">
-      <div className="flex items-start justify-between max-w-7xl mx-auto border-b-2 border-indigo-800/30 pb-4">
+    <header className="bg-indigo-100/50 px-6 pt-6 lg:px-12 lg:pt-12">
+      <div className="max-w-7xl mx-auto flex items-start justify-between border-b-2 border-indigo-800/30 pb-4">
         <div className="flex items-center gap-2 lg:gap-4 ">
           <div className="w-[48px] bg-indigo-800 border-4 border-indigo-800 rounded-full overflow-hidden shadow-lg shadow-indigo-200">
             <Image
@@ -26,7 +26,7 @@ export function Header() {
           </h1>
         </div>
 
-        <SocialLinks items={['GitHub', 'Linkedin']} />
+        <SocialLinks items={["GitHub", "Linkedin"]} />
       </div>
     </header>
   );
