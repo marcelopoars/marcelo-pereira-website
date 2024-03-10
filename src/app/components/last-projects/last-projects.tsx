@@ -4,11 +4,11 @@ import Image from "next/image";
 
 export function LastProjects() {
   return (
-    <section className="px-6 py-12 lg:px-12 lg:py-20">
+    <section className="px-6 py-16 lg:px-12 lg:py-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl mb-8 lg:text-4xl lg:mb-12">Últimos projetos</h2>
+        <h2 className="text-3xl mb-8 lg:text-4xl lg:mb-12">Últimos projetos</h2>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid gap-12 lg:grid-cols-3 lg:gap-20">
           {lastProjects.map(
             ({
               name,
@@ -21,7 +21,7 @@ export function LastProjects() {
             }) => (
               <article
                 key={name}
-                className="bg-white px-4 py-6 space-y-4 rounded shadow-sm"
+                className="space-y-4"
               >
                 <header>
                   <h3 className="text-lg font-semibold lg:text-xl">{name}</h3>
