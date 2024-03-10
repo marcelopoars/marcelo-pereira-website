@@ -1,15 +1,15 @@
-import { myProjects } from "@/app/lib";
+import { lastProjects } from "@/app/lib";
 import { GithubLogo, Link } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 
-export function Projects() {
+export function LastProjects() {
   return (
     <section className="px-6 py-12 lg:px-12 lg:py-20">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl mb-8 lg:text-4xl lg:mb-12">Últimos projetos</h2>
 
         <div className="grid lg:grid-cols-3 gap-12">
-          {myProjects.map(
+          {lastProjects.map(
             ({
               name,
               description,

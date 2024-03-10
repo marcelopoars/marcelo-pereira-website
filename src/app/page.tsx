@@ -1,10 +1,10 @@
-import { Hero, Projects, SocialLinks } from "./components";
+import { Hero, LastProjects } from "./components";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Projects />
+      <LastProjects />
     </>
   );
 }

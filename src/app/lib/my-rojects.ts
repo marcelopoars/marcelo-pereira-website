@@ -2,8 +2,18 @@ import elaineCostureiraThumb from '@/app/assets/projects/elaine-costureira-websi
 import triploASeminovosThumb from '@/app/assets/projects/triploa-seminovos-website.png'
 import tailwindNextJsThumb from '@/app/assets/projects/tailwind-nextjs-app.png'
 import notesNlwExpertThumb from '@/app/assets/projects/notes-nlw-expert-app.png'
+import SolarisThumb from '@/app/assets/projects/solaris-website.png'
 
-export const myProjects = [
+export const lastProjects = [
+  {
+    name: 'Solaris Energia Solar',
+    description: 'Landing page desenvolvida para o cliente Solaris Energia Solar de Pinheiro Machado - RS.',
+    githubLink: '',
+    previewLink: 'https://www.solaris.eco.br',
+    stack: ['ReactJs', 'NextJs', 'TypeScript', 'TailwindCSS', 'SEO'],
+    thumb: SolarisThumb,
+    projectType: 'Landing page'
+  },
   {
     name: 'Tailwind NextJs',
     description: 'Projeto desenvolvido na Masterclass de TailwindCSS da Rocketseat.',
@@ -24,7 +34,7 @@ export const myProjects = [
   },
   {
     name: 'Elaine | Costureira',
-    description: 'Landing page desenvolvida para a cliente Elaine Costureira de Canoas-RS.',
+    description: 'Landing page desenvolvida para a cliente Elaine Costureira de Canoas - RS.',
     githubLink: '',
     previewLink: 'https://www.elainecostureira.com.br',
     stack: ['ReactJs', 'NextJs', 'TypeScript', 'TailwindCSS', 'SEO'],

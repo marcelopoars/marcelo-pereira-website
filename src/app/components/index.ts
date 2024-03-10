@@ -1,6 +1,6 @@
-export * from './new-footer';
 export * from './header';
 export * from './hero';
-export * from './projects';
+export * from './last-projects';
+export * from './new-footer';
 export * from "./social-links";
 
