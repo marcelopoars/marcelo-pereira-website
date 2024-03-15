@@ -43,17 +43,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className="antialiased text-balance">
-      <head>
-        <meta
-          name="adopt-website-id"
-          content="38d0dc0f-dc5e-4487-a4de-fdd17e233975"
-        />
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script
-          src="//tag.goadopt.io/injector.js?website_code=38d0dc0f-dc5e-4487-a4de-fdd17e233975"
-          className="adopt-injector"
-        />
-      </head>
       <body className={`${inter.className}`}>
         <Header />
         <main className="flex-1">{children}</main>
