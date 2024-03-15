@@ -49,13 +49,6 @@ export default function RootLayout({
         <Footer />
         <Analytics />
         <GoogleTagManager gtmId="G-VBFCXZR5JB" />
-        <a
-          href="https://www.iubenda.com/privacy-policy/99436786"
-          className="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
-          title="Política de Privacidade "
-        >
-          Política de Privacidade
-        </a>
       </body>
     </html>
   );
