@@ -1,14 +1,9 @@
-import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Script from "next/script";
 
 import { Footer, Header } from "./components";
 
 import "./styles/globals.css";
-import { GoogleTagManager } from "@next/third-parties/google";
-
-import { bannerCookies } from "./lib/iubenda";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -47,8 +42,6 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <Analytics />
-        <GoogleTagManager gtmId="G-VBFCXZR5JB" />
       </body>
     </html>
   );
