@@ -13,7 +13,6 @@ type LinkProps = {
   icon: JSX.Element;
 };
 
-
 export const links: LinkProps[] = [
   {
     name: "GitHub",

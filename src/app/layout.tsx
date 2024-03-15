@@ -1,11 +1,14 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 
 import { Footer, Header } from "./components";
 
 import "./styles/globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
+
+import { bannerCookies } from "./lib/iubenda";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,7 +18,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   generator: "Next.js",
   applicationName: "Marcelo Pereira - Website",
-  category: 'technology',
+  category: "technology",
   authors: [{ name: "Marcelo Pereira", url: "https://marcelopereira.dev" }],
   creator: "Marcelo Pereira",
   title: "Marcelo Pereira | Desenvolvedor Frontend",
@@ -30,9 +33,7 @@ export const metadata: Metadata = {
     type: "website",
     countryName: "Brasil",
     url: "https://marcelopereira.dev",
-
   },
-
 };
 
 export default function RootLayout({
@@ -42,12 +43,30 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className="antialiased text-balance">
+      <head>
+        <meta
+          name="adopt-website-id"
+          content="38d0dc0f-dc5e-4487-a4de-fdd17e233975"
+        />
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script
+          src="//tag.goadopt.io/injector.js?website_code=38d0dc0f-dc5e-4487-a4de-fdd17e233975"
+          className="adopt-injector"
+        />
+      </head>
       <body className={`${inter.className}`}>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
         <Analytics />
         <GoogleTagManager gtmId="G-VBFCXZR5JB" />
+        <a
+          href="https://www.iubenda.com/privacy-policy/99436786"
+          className="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+          title="Política de Privacidade "
+        >
+          Política de Privacidade
+        </a>
       </body>
     </html>
   );

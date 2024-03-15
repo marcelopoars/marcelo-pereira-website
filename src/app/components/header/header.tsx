@@ -26,7 +26,9 @@ export function Header() {
           </h1>
         </div>
 
-        <SocialLinks items={["GitHub", "Linkedin"]} />
+        <div className="text-indigo-700">
+          <SocialLinks items={["GitHub", "Linkedin"]} />
+        </div>
       </div>
     </header>
   );
