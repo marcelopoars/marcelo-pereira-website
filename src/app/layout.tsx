@@ -40,22 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className="antialiased text-balance">
-      <head>
-        <meta
-          name="adopt-website-id"
-          content="38d0dc0f-dc5e-4487-a4de-fdd17e233975"
-        />
-        <script
-          src="//tag.goadopt.io/injector.js?website_code=38d0dc0f-dc5e-4487-a4de-fdd17e233975"
-          className="adopt-injector"
-          async
-        />
-      </head>
       <body className={`${inter.className}`}>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <GoogleTagManager gtmId="G-VBFCXZR5JB" />
       </body>
     </html>
   );
