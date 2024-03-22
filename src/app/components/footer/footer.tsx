@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
-import { Chat } from "@phosphor-icons/react/dist/ssr";
+import { Chat, WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 
 import { SocialLinks } from "..";
 
@@ -30,18 +30,20 @@ export function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         className={twMerge(
-          "hidden",
-          "fixed right-12 bottom-12",
+          "fixed",
+          "right-6 bottom-6",
+          "lg:right-12 lg:bottom-12",
           "bg-slate-900 text-white text-sm font-semibold whitespace-nowrap",
-          "px-8 py-4",
-          "rounded-full",
-          "lg:hover:bg-slate-950 lg:focus-visible:ring-2 lg:focus-visible:ring-offset-4 lg:focus-visible:ring-indigo-600",
-          "outline-none transition",
-          "lg:flex items-center gap-2"
+          "p-3",
+          "lg:p-4",
+          "lg:hover:bg-slate-950",
+          "lg:focus-visible:ring-2 lg:focus-visible:ring-offset-4 lg:focus-visible:ring-indigo-600",
+          "lg:flex items-center gap-2",
+          "rounded-full outline-none transition",
         )}
+        aria-label="Clique para ir para o WhatsApp"
       >
-        <Chat weight="duotone" className="size-6" />
-        Solicite orçamento
+        <WhatsappLogo className="size-12" />
       </a>
     </footer>
   );
