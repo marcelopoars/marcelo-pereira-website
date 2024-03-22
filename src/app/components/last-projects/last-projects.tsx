@@ -6,26 +6,19 @@ export function LastProjects() {
   return (
     <section id="last-projects" className="px-6 py-16 lg:px-12 lg:py-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl text-center mb-8 lg:text-4xl lg:mb-12">Últimos projetos</h2>
+        <h2 className="text-3xl text-center mb-8 lg:text-4xl lg:mb-12">
+          Últimos projetos
+        </h2>
 
         <div className="grid gap-12 lg:grid-cols-3 lg:gap-20">
           {lastProjects.map(
-            ({
-              name,
-              description,
-              githubLink,
-              previewLink,
-              stack,
-              thumb,
-              projectType,
-            }) => (
-              <article
-                key={name}
-                className="space-y-4"
-              >
+            ({ name, githubLink, previewLink, stack, thumb, projectType }) => (
+              <article key={name} className="space-y-4">
                 <header>
                   <h3 className="text-lg font-semibold lg:text-xl">{name}</h3>
-                  <span className="text-indigo-600 font-semibold">{projectType}</span>
+                  <span className="text-indigo-600 font-semibold">
+                    {projectType}
+                  </span>
                 </header>
 
                 <Image
@@ -34,18 +27,15 @@ export function LastProjects() {
                   placeholder="blur"
                   className="border border-zinc-300 rounded shadow-lg shadow-indigo-100"
                 />
-
-                <p>{description}</p>
-
                 <div>
                   <span className="block text-sm font-bold mb-4">
                     Tecnologias:
                   </span>
-                  <ul className="flex flex-wrap gap-4 ">
+                  <ul className="flex flex-wrap gap-2 ">
                     {stack.map((item) => (
                       <li
                         key={item}
-                        className="text-xs text-indigo-600 font-semibold border border-indigo-600 px-2 py-1 rounded"
+                        className="text-xs text-indigo-600 font-semibold border border-indigo-600 p-1 rounded"
                       >
                         {item}
                       </li>
