@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export function LastProjects() {
   return (
-    <section className="px-6 py-16 lg:px-12 lg:py-20">
+    <section id="last-projects" className="px-6 py-16 lg:px-12 lg:py-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl mb-8 lg:text-4xl lg:mb-12">Últimos projetos</h2>
+        <h2 className="text-3xl text-center mb-8 lg:text-4xl lg:mb-12">Últimos projetos</h2>
 
         <div className="grid gap-12 lg:grid-cols-3 lg:gap-20">
           {lastProjects.map(

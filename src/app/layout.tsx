@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   category: "technology",
   authors: [{ name: "Marcelo Pereira", url: "https://marcelopereira.dev" }],
   creator: "Marcelo Pereira",
-  title: "Marcelo Pereira | Desenvolvedor Frontend",
+  title: "Marcelo Pereira - Criação de Sites, Aplicações Web e APPs",
   description:
-    "Criação e desenvolvimento de sites, landing pages e aplicações web em Porto Alegre.",
+    "Desenvolvedor Full-Stack especialista na criação e desenvolvimento de sites, blogs, landing pages, aplicações web e APPs para celular.",
   metadataBase: new URL("https://marcelopereira.dev"),
   alternates: {
     canonical: "/",
@@ -33,13 +33,14 @@ export const metadata: Metadata = {
   },
 };
 
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br" className="antialiased text-balance">
+    <html lang="pt-br" className="antialiased text-pretty scroll-smooth">
       <body className={`${inter.className}`}>
         <Header />
         <main className="flex-1">{children}</main>
